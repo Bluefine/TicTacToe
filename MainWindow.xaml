@@ -1,0 +1,19 @@
+﻿<Window x:Class="TicTacToe.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TicTacToe"
+        mc:Ignorable="d"
+        Loaded="MainWindow_OnLoaded"
+        Title="MainWindow" Height="400" Width="346">
+    <Grid>
+        <Menu>
+            <MenuItem Header="Game">
+                <MenuItem Name="MenuItemReset" Header="Reset" Click="MenuItemReset_OnClick"/>
+                <MenuItem Name="MenuItemAi" Header="AI first" Click="ButtonBase_OnClick"/>
+            </MenuItem>
+        </Menu>
+        <WrapPanel Name="WrapPanelBoard" Margin="0,30,0,0"/>
+    </Grid>
+</Window>
